@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </head>
 <body>
       <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -18,7 +22,9 @@
                         <div class="collapse navbar-collapse" id="navbarMenu">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link">Timer</a>
+                                    <div class = "display">
+                                        <h1 class ="display-time-left"></h1>
+                                    </div>
                                 </li>
                               </ul>
                         </div>
@@ -31,24 +37,24 @@
     
 
     <div class="options">
-        <ul id="ul">
+        <!-- <ul id="ul">
               <li id="op1" onclick="button(this)"></li>
               <li id="op2" onclick="button(this)"></li>
               <li id="op3" onclick="button(this)"></li>
               <li id="op4" onclick="button(this)"></li>
-        </ul>
+        </ul> -->
   </div>
   <div class="score">
-    <div class="next">
+    <!-- <div class="next">
           <button type="button" onclick="next()" id="button">Next</button>
-    </div>
+    </div> -->
     <div class="score-card">
           Score : <span id="scoreCard">0</span>
     </div>
 </div>
 </div>
 
-
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
